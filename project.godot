@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Rhythm Volcano"
 run/main_scene="uid://bgqf22l4b5ng8"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -24,6 +28,7 @@ Conductor="*res://FileSystem/Conductor.gd"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/initial_position=Vector2i(960, 540)
+window/stretch/mode="viewport"
 
 [dotnet]
 
