@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgqf22l4b5ng8"]
+[gd_scene format=3 uid="uid://bgqf22l4b5ng8"]
 
 [ext_resource type="Texture2D" uid="uid://qw06px5rukhy" path="res://Assets/background.png" id="2_1ehe0"]
 
@@ -10,16 +10,20 @@ func _on_start_button_pressed() -> void:
 	get_tree().change_scene_to_file(\"res://Scenes/MapScreen.tscn\")
 "
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=1119452854]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 896.0
+offset_top = 676.0
+offset_right = 896.0
+offset_bottom = 676.0
 grow_horizontal = 2
 grow_vertical = 2
 script = SubResource("GDScript_28flt")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=286590779]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1ehe0")
 
-[node name="StartButton" type="Button" parent="."]
+[node name="StartButton" type="Button" parent="." unique_id=26984533]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

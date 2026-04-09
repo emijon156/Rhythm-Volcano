@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://b7yadv04twv25"]
+
+[ext_resource type="Script" uid="uid://cyp1cacbkbdc1" path="res://character_body_2d.gd" id="1_1skup"]
+[ext_resource type="Texture2D" uid="uid://oxslm35htty7" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0001.png" id="2_1n0ks"]
+[ext_resource type="Texture2D" uid="uid://c5hh16y5fe7ca" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0002.png" id="3_hcklb"]
+[ext_resource type="Texture2D" uid="uid://c1rj68cdiojq2" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0003.png" id="4_ys6q8"]
+[ext_resource type="Texture2D" uid="uid://clu7wp8pd5i1v" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0004.png" id="5_nkdsw"]
+[ext_resource type="Texture2D" uid="uid://dljiomkxk7kpn" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0005.png" id="6_4ysx1"]
+[ext_resource type="Texture2D" uid="uid://du608kxts12ty" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0006.png" id="7_r2op8"]
+[ext_resource type="Texture2D" uid="uid://cyn88wxklwhhl" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0007.png" id="8_7sl75"]
+[ext_resource type="Texture2D" uid="uid://c1hia8noyck18" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0008.png" id="9_c4bob"]
+[ext_resource type="Texture2D" uid="uid://i1jka2cvj8s7" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0009.png" id="10_6rc4b"]
+[ext_resource type="Texture2D" uid="uid://igb4nct5pkeg" path="res://Assets/Lava Protag Sprites/Lava Protag Idle/Lava Protag.0010.png" id="11_38um0"]
+[ext_resource type="Texture2D" uid="uid://dn5bw51i7jaal" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0018.png" id="12_olfoo"]
+[ext_resource type="Texture2D" uid="uid://sbqnju18oqqf" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0014.png" id="13_gddtt"]
+[ext_resource type="Texture2D" uid="uid://cwc46wevevumy" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0015.png" id="14_3p5qr"]
+[ext_resource type="Texture2D" uid="uid://ckp1rvwqogjck" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0016.png" id="15_g6ebc"]
+[ext_resource type="Texture2D" uid="uid://bcaqaqxkbb3fp" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0017.png" id="16_oor8w"]
+[ext_resource type="Texture2D" uid="uid://df6o4npv5klgr" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0019.png" id="17_4kcd4"]
+[ext_resource type="Texture2D" uid="uid://bls2ossmh4t02" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0020.png" id="18_bbik1"]
+[ext_resource type="Texture2D" uid="uid://bh6qvq231npos" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0021.png" id="19_0irqd"]
+[ext_resource type="Texture2D" uid="uid://h6v0cae0u81p" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0022.png" id="20_jpyle"]
+[ext_resource type="Texture2D" uid="uid://c1oarsc10t5r" path="res://Assets/Lava Protag Sprites/Lava Protag Walk/2Lava Protag.0023.png" id="21_n3e1a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rnlcj"]
+radius = 85.0
+height = 290.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uqnfg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1n0ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hcklb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ys6q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nkdsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4ysx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r2op8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7sl75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_c4bob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6rc4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_38um0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_olfoo")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_gddtt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3p5qr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_g6ebc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_oor8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_olfoo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4kcd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bbik1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0irqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_jpyle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_n3e1a")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_56nps"]
+size = Vector2(1160.5, 169)
+
+[node name="NewLevel1" type="Node2D" unique_id=1078608389]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1883193721]
+position = Vector2(891, 142)
+script = ExtResource("1_1skup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1300662343]
+shape = SubResource("CapsuleShape2D_rnlcj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1819805022]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_uqnfg")
+animation = &"idle"
+frame_progress = 0.22117917
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=198155932]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=55896619]
+position = Vector2(893, 646)
+shape = SubResource("RectangleShape2D_56nps")
